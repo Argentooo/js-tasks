@@ -15,19 +15,21 @@ let yardRectangleA = 50;
 let yardRectangleB = 30;
 let houseRectangleA = 20;
 let houseRectangleB = 10;
-let yardRectangle = (yardRectangleA + yardRectangleB) * 2;
-let houseRectangle = (houseRectangleA + houseRectangleB) * 2;
+let yardRectangle = yardRectangleA * yardRectangleB;
+let houseRectangle = houseRectangleA * houseRectangleB;
 let yardAndHouseRectangle = yardRectangle - houseRectangle;
 console.log("Площадь дома: " + houseRectangle);
 console.log("Свободная площадь двора: " + yardAndHouseRectangle);
 console.log(
-  "Длина забора: " + (yardRectangle - (houseRectangleA + houseRectangleB))
+  "Длина забора: " +
+    ((yardRectangleA + yardRectangleB) * 2 -
+      (houseRectangleA + houseRectangleB))
 );
 
 /*
 3 - В браузере запрашиваются два числа. Если первое больше второго, то вычислить их сумму, иначе - произведение. После этого компьютер должен вывести alert ЗАДАЧА РЕШЕНА. - 10
 */
-
+/*
 let number = Number(prompt("Write a number: "));
 let number2 = Number(prompt("Write a second number: "));
 
@@ -38,11 +40,11 @@ if (number > number2) {
   alert("ЗАДАЧА РЕШЕНА.");
   document.write(number * number2);
 }
-
+*/
 /*
  4 - Дракон каждый год отращивает по три головы, но после того, как ему исполнится 100 лет - только по две. Сколь-ко голов и глаз у дракона, которому N лет? - 10
  */
-
+/*
 let dragonHeadsBeforeHundred = 3;
 let dragonHeadsAfterHundred = 2;
 let dragonEyesBeforeHundred = 6;
@@ -60,11 +62,11 @@ if (howOldIsDragon < 100) {
     "Dragon eyes: " + (howOldIsDragon * dragonEyesAfterHundred - 396 + 594)
   );
 }
-
+*/
 /*
 5 - Пусть браузер, узнав возраст человека, дальнейшую беседу ведет по двум вариантам. Если возраст больше 17, то компьютер должен задать вопрос: "В каком институте ты учишься?" и получив ответ, глубокомысленно заметить "Хороший институт". Если же возраст меньше или равен 17, то соответственно - "В какой школе ты учишься?" и "Неплохая школа". После этого, каков бы ни был вариант, компьютер должен попрощаться: "До следующей встречи!". - 10
 */
-
+/*
 let howOldIsUser = Number(prompt("How old are you? "));
 
 if (howOldIsUser > 17) {
@@ -76,3 +78,4 @@ if (howOldIsUser > 17) {
   alert("Неплохая школа");
   alert("До следующей встречи!");
 }
+*/
