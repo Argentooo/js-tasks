@@ -70,25 +70,14 @@ if (enterArithmeticSymbol == "+") {
 /*
  3 - Вывести в консоль все возможные сочетания из двух цифр - первая цифра может быть любой от 3 до 8, вторая любой от 0 до 7. Пример: 36, 44, 80 и т.д
  */
+
 /*
-while (true) {
-  let writeANumber = +prompt("Write a number from 3 to 8");
-  let writeASecondNumber = +prompt("Write a number from 0 to 7");
-  if (
-    writeANumber >= 3 &&
-    writeANumber <= 8 &&
-    writeASecondNumber >= 0 &&
-    writeASecondNumber <= 7
-  ) {
-    document.write(
-      "All kinds of combinations: " +
-        writeANumber +
-        writeASecondNumber +
-        ", " +
-        writeASecondNumber +
-        writeANumber
-    );
-    break;
+let firstNumber = [3, 4, 5, 6, 7, 8];
+let secondNumber = [0, 1, 2, 3, 4, 5, 6, 7];
+
+for (let i = 0; i < firstNumber.length; i++) {
+  for (let j = 0; j < secondNumber.length; j++) {
+    console.log(`${firstNumber[i]}${secondNumber[j]}`);
   }
 }
 */
